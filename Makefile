@@ -3,7 +3,7 @@ SHELL=/bin/bash -o pipefail
 REGISTRY   ?= kubedb
 BIN        := postgres_exporter
 IMAGE      := $(REGISTRY)/$(BIN)
-DB_VERSION := v0.4.6
+DB_VERSION := v0.4.7
 TAG        := $(shell git describe --exact-match --abbrev=0 2>/dev/null || echo "")
 
 .PHONY: push
